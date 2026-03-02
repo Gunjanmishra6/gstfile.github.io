@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GST Filing Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #219150;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GST Filing Information Portal</h1>
+    <p>Your simple guide to GST return filing</p>
+</header>
+
+<nav>
+    <a href="#about">About GST</a>
+    <a href="#returns">GST Returns</a>
+    <a href="#process">Filing Process</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About GST</h2>
+    <div class="card">
+        <p>Goods and Services Tax (GST) is an indirect tax applied to the supply of goods and services. 
+        It replaces multiple cascading taxes levied by the government.</p>
+    </div>
+</section>
+
+<section id="returns">
+    <h2>Types of GST Returns</h2>
+    <div class="card">
+        <ul>
+            <li><strong>GSTR-1</strong> – Details of outward supplies</li>
+            <li><strong>GSTR-3B</strong> – Monthly summary return</li>
+            <li><strong>GSTR-9</strong> – Annual return</li>
+        </ul>
+    </div>
+</section>
+
+<section id="process">
+    <h2>GST Filing Process</h2>
+    <div class="card">
+        <ol>
+            <li>Login to the GST Portal</li>
+            <li>Select the return type</li>
+            <li>Enter invoice details</li>
+            <li>Verify tax amounts</li>
+            <li>Submit and file with DSC/EVC</li>
+        </ol>
+        <button onclick="showMessage()">Click for Important Note</button>
+        <p id="note"></p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Information</h2>
+    <div class="card">
+        <p>Email: support@gstportal.com</p>
+        <p>Phone: +91 9876543210</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 GST Filing Guide | All Rights Reserved</p>
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById("note").innerHTML = 
+        "Important: Ensure all invoice details are accurate before submission to avoid penalties.";
+    }
+</script>
+
+</body>
+</html>
